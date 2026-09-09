@@ -49,7 +49,13 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# ── CORS ──────────────────────────────────────────────────────────
+# ── Rate Limiting & CORS ──────────────────────────────────────────
+from app.core.rate_limiter import RateLimitMiddleware
+
+app.add_middleware(
+    RateLimitMiddleware,
+    rpm=settings.RATE_LIMIT_RPM,
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,

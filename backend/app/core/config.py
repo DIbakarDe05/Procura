@@ -76,6 +76,10 @@ class Settings(BaseSettings):
     UPLOAD_DIR: str = "./uploads"
     MAX_UPLOAD_SIZE_MB: int = 50
 
+    # ── Rate Limiting ────────────────────────────────────────────
+    RATE_LIMIT_ENABLED: bool = True
+    RATE_LIMIT_RPM: int = 10  # Maximum requests per minute per client IP
+
     # ── CORS ─────────────────────────────────────────────────────
     CORS_ORIGINS: list[str] = [
         "http://localhost:5173",
