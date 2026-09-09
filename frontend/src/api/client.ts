@@ -132,10 +132,11 @@ export interface RecommendationActionResponse {
   message: string
 }
 
-const API_BASE = ""
+const API_BASE = (import.meta.env.VITE_API_URL || "https://procura-zhj7.onrender.com").replace(/\/$/, "")
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const url = `${API_BASE}${path}`
+  const res = await fetch(url, {
     ...options,
     headers: {
       "Content-Type": "application/json",
@@ -147,8 +148,12 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
     let errorDetail = res.statusText
     try {
       const errJson = await res.json()
-      errorDetail = errJson.detail || JSON.stringify(errJson)
-    } catch {}
+      errorDetail = errJson.detail || errJson.message || JSON.stringify(errJson)
+    } catch {
+      if (res.status === 404) {
+        errorDetail = `Endpoint not found (404) at ${url}`
+      }
+    }
     throw new Error(`API Error ${res.status}: ${errorDetail}`)
   }
 

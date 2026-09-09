@@ -38,10 +38,10 @@ class Settings(BaseSettings):
         description="Google Gemini API key — required for analysis and embeddings.",
     )
     GEMINI_MODEL: str = "gemini-2.0-flash"
-    GEMINI_EMBEDDING_MODEL: str = "text-embedding-004"
+    GEMINI_EMBEDDING_MODEL: str = "gemini-embedding-2"
 
     # ── Embeddings ───────────────────────────────────────────────
-    EMBEDDING_DIMENSION: int = 768
+    EMBEDDING_DIMENSION: int = 3072
     EMBEDDING_BATCH_SIZE: int = 20
 
     # ── Retrieval ────────────────────────────────────────────────
@@ -88,6 +88,7 @@ class Settings(BaseSettings):
         "http://127.0.0.1:5174",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "https://procura-zhj7.onrender.com",
     ]
 
     # ── Paths ────────────────────────────────────────────────────
