@@ -62,11 +62,15 @@ export const TenderWorkflow: React.FC<TenderWorkflowProps> = ({ onBack }) => {
       const uploadRes = await api.uploadTender(file)
       const currentTenderId = uploadRes.id
       setTenderId(currentTenderId)
+
+      // Start the tender analysis pipeline on the backend
+      await api.startTenderAnalysis(currentTenderId)
+
       setStep('processing')
       setIsUploading(false)
 
       let attempts = 0
-      const maxAttempts = 120
+      const maxAttempts = 150  // 5 minutes (150 * 2000ms)
 
       pollRef.current = setInterval(async () => {
         attempts++

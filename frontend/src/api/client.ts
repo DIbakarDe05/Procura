@@ -170,13 +170,22 @@ export const api = {
   async uploadTender(file: File): Promise<TenderUploadResponse> {
     const formData = new FormData()
     formData.append("file", file)
-    const res = await fetch(`${API_BASE}/api/tenders/upload`, {
+    const url = `${API_BASE}/api/tenders/upload`
+    const res = await fetch(url, {
       method: "POST",
       body: formData,
     })
     if (!res.ok) {
-      const err = await res.json().catch(() => ({}))
-      throw new Error(err.detail || "Failed to upload tender PDF")
+      let errorDetail = res.statusText
+      try {
+        const errJson = await res.json()
+        errorDetail = errJson.detail || errJson.message || JSON.stringify(errJson)
+      } catch {
+        if (res.status === 404) {
+          errorDetail = `Upload endpoint not found (404) at ${url}`
+        }
+      }
+      throw new Error(`Upload Error ${res.status}: ${errorDetail}`)
     }
     return res.json()
   },

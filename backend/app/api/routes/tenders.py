@@ -42,21 +42,22 @@ async def upload_tender(
     db: AsyncSession = Depends(get_db),
 ):
     """Upload a tender PDF for analysis."""
-    # Validate file type
+    # Validate file type extension
     if not file.filename or not file.filename.lower().endswith(".pdf"):
-        raise HTTPException(400, "Only PDF files are accepted")
+        raise HTTPException(400, "Only PDF files are accepted (.pdf extension required)")
 
-    if file.content_type and file.content_type != "application/pdf":
-        raise HTTPException(400, f"Invalid content type: {file.content_type}")
+    content = await file.read()
+    if len(content) > settings.MAX_UPLOAD_SIZE_MB * 1024 * 1024:
+        raise HTTPException(413, f"File exceeds {settings.MAX_UPLOAD_SIZE_MB}MB limit")
+
+    # Verify binary PDF signature (%PDF header) regardless of browser MIME string
+    if not content.startswith(b"%PDF"):
+        raise HTTPException(400, "Invalid PDF file: Missing %PDF signature header")
 
     # Save file
     file_id = str(uuid.uuid4())
     upload_dir = settings.upload_path
     file_path = upload_dir / f"{file_id}.pdf"
-
-    content = await file.read()
-    if len(content) > settings.MAX_UPLOAD_SIZE_MB * 1024 * 1024:
-        raise HTTPException(413, f"File exceeds {settings.MAX_UPLOAD_SIZE_MB}MB limit")
 
     with open(file_path, "wb") as f:
         f.write(content)
@@ -69,7 +70,7 @@ async def upload_tender(
         status="uploaded",
     )
     db.add(tender)
-    await db.flush()
+    await db.commit()
 
     return TenderUploadResponse(
         id=tender.id,
