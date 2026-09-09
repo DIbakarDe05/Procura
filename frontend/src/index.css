@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base Resets ──────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f5f6fa;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* ── Utility Classes ─────────────────────────────── */
+@layer components {
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 
+           bg-navy-700 text-white font-semibold text-sm rounded-md
+           hover:bg-navy-800 active:bg-navy-900
+           transition-colors duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           border border-gray-300 text-gray-700 font-medium text-sm rounded-md
+           hover:bg-gray-50 active:bg-gray-100
+           transition-colors duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-success {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           bg-green-600 text-white font-medium text-sm rounded-md
+           hover:bg-green-700 transition-colors duration-150;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           bg-red-600 text-white font-medium text-sm rounded-md
+           hover:bg-red-700 transition-colors duration-150;
+  }
+
+  .btn-warning {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           bg-amber-500 text-white font-medium text-sm rounded-md
+           hover:bg-amber-600 transition-colors duration-150;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  .section-title {
+    @apply text-lg font-bold text-gray-900;
+  }
+}
+
+/* ── Focus Styles ────────────────────────────────── */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #1a3664;
+  outline-offset: 1px;
+}
+
+/* ── Scrollbar ───────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* ── Simple Animations ───────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin 1.5s linear infinite;
+}

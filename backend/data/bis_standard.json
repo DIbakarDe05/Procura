@@ -1,0 +1,293 @@
+{
+  "source": {
+    "name": "ByteWorks Prototype BIS Dataset",
+    "type": "prototype_test_data",
+    "verified": false,
+    "note": "Synthetic/sample records for testing only. Not authoritative BIS data."
+  },
+  "standards": [
+    {
+      "id": "bis-proto-001",
+      "standard_number": "IS 9079:1979",
+      "title": "Vertical Turbine Pumps for Agricultural Purposes",
+      "scope": "Prototype pump-related record for semantic retrieval testing.",
+      "category": "pumps",
+      "product_types": [
+        "pump",
+        "water pump",
+        "centrifugal pump"
+      ],
+      "technical_requirements": [
+        "Pump performance shall meet specified discharge and head requirements.",
+        "Pump construction shall be suitable for the intended water pumping application.",
+        "Performance testing shall be carried out according to applicable test procedures."
+      ],
+      "keywords": [
+        "water pump",
+        "centrifugal pump",
+        "pump performance",
+        "head",
+        "discharge",
+        "testing"
+      ],
+      "edition": "1979",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": [
+        {
+          "standard_number": "IS PROTO-TEST-001",
+          "reference_type": "test_method",
+          "description": "Prototype pump performance test method."
+        }
+      ]
+    },
+    {
+      "id": "bis-proto-002",
+      "standard_number": "IS 6595:1971",
+      "title": "Code of Practice for Water Pumps",
+      "scope": "Prototype record for general water-pump requirements and application context.",
+      "category": "pumps",
+      "product_types": [
+        "water pump",
+        "centrifugal pump",
+        "pump"
+      ],
+      "technical_requirements": [
+        "Pumps shall be suitable for the specified water pumping duty.",
+        "Installation and operating conditions shall be considered.",
+        "Pump performance characteristics shall be specified and verified."
+      ],
+      "keywords": [
+        "water pump",
+        "pump installation",
+        "pump operation",
+        "pump performance",
+        "water supply"
+      ],
+      "edition": "1971",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": [
+        {
+          "standard_number": "IS PROTO-SAFE-001",
+          "reference_type": "safety",
+          "description": "Prototype safety requirements for pump installations."
+        }
+      ]
+    },
+    {
+      "id": "bis-proto-003",
+      "standard_number": "IS 1239:2004",
+      "title": "Steel Tubes for Water Applications",
+      "scope": "Prototype allied-material record for water-system retrieval testing.",
+      "category": "materials",
+      "product_types": [
+        "steel tube",
+        "water system",
+        "piping"
+      ],
+      "technical_requirements": [
+        "Steel components shall meet specified dimensional requirements.",
+        "Material properties shall satisfy the intended water-service application.",
+        "Testing shall verify applicable material and dimensional characteristics."
+      ],
+      "keywords": [
+        "steel",
+        "stainless steel",
+        "water",
+        "piping",
+        "material",
+        "dimensions"
+      ],
+      "edition": "2004",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": []
+    },
+    {
+      "id": "bis-proto-004",
+      "standard_number": "IS 302:Part 1:2008",
+      "title": "Safety of Household and Similar Electrical Appliances — General Requirements",
+      "scope": "Prototype electrical-safety record for retrieval testing.",
+      "category": "electrical_safety",
+      "product_types": [
+        "electrical appliance",
+        "motor-driven appliance"
+      ],
+      "technical_requirements": [
+        "Electrical equipment shall provide protection against electric shock.",
+        "Insulation and electrical construction shall satisfy applicable safety requirements.",
+        "Protection against abnormal operation shall be considered."
+      ],
+      "keywords": [
+        "electrical safety",
+        "electric shock",
+        "insulation",
+        "motor",
+        "electrical equipment"
+      ],
+      "edition": "2008",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": []
+    },
+    {
+      "id": "bis-proto-005",
+      "standard_number": "IS 4691:1985",
+      "title": "Hydraulic Performance Testing of Pumps",
+      "scope": "Prototype test-method record for pump performance retrieval.",
+      "category": "test_methods",
+      "product_types": [
+        "pump",
+        "centrifugal pump",
+        "hydraulic pump"
+      ],
+      "technical_requirements": [
+        "Pump discharge shall be measured under defined test conditions.",
+        "Head and efficiency shall be determined from test measurements.",
+        "Performance results shall be recorded for comparison with specified requirements."
+      ],
+      "keywords": [
+        "pump testing",
+        "hydraulic performance",
+        "pump efficiency",
+        "pump head",
+        "discharge",
+        "test method"
+      ],
+      "edition": "1985",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": []
+    },
+    {
+      "id": "bis-proto-006",
+      "standard_number": "IS 325:1996",
+      "title": "Three Phase Induction Motors",
+      "scope": "Prototype motor-related record for retrieval from pump specifications.",
+      "category": "electric_motors",
+      "product_types": [
+        "induction motor",
+        "three phase motor",
+        "pump motor"
+      ],
+      "technical_requirements": [
+        "Motor rated power shall be specified.",
+        "Motor speed and operating characteristics shall be compatible with the application.",
+        "Electrical and mechanical performance shall satisfy the specified operating conditions."
+      ],
+      "keywords": [
+        "motor",
+        "three phase motor",
+        "induction motor",
+        "10 HP",
+        "2900 RPM",
+        "pump motor",
+        "motor efficiency"
+      ],
+      "edition": "1996",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": []
+    },
+    {
+      "id": "bis-proto-007",
+      "standard_number": "IS 9999:2024",
+      "title": "Centrifugal Pumps for Industrial Water Supply",
+      "scope": "Synthetic high-relevance record specifically created to test ByteWorks Query retrieval for industrial centrifugal water pumps.",
+      "category": "pumps",
+      "product_types": [
+        "centrifugal pump",
+        "industrial water pump",
+        "water supply pump"
+      ],
+      "technical_requirements": [
+        "The standard applies to centrifugal pumps intended for industrial water supply.",
+        "Pump performance shall be specified using parameters such as head, discharge and efficiency.",
+        "Rated motor power and rotational speed shall be compatible with the specified pump duty.",
+        "Materials used in pump construction shall be suitable for the intended water-service environment.",
+        "Performance testing shall verify the specified operating characteristics."
+      ],
+      "keywords": [
+        "centrifugal pump",
+        "industrial water supply",
+        "10 HP",
+        "2900 RPM",
+        "pump efficiency",
+        "pump head",
+        "pump discharge",
+        "stainless steel casing",
+        "pump testing"
+      ],
+      "edition": "2024",
+      "status": "prototype_active",
+      "amendments": [
+        "AMD 1:2025"
+      ],
+      "certification_required": true,
+      "certification_details": {
+        "scheme": "Prototype BIS certification requirement",
+        "status": "For demonstration only"
+      },
+      "references": [
+        {
+          "standard_number": "IS 4691:1985",
+          "reference_type": "test_method",
+          "description": "Hydraulic performance testing."
+        },
+        {
+          "standard_number": "IS 325:1996",
+          "reference_type": "related_product",
+          "description": "Three-phase induction motor requirements."
+        },
+        {
+          "standard_number": "IS PROTO-SAFE-001",
+          "reference_type": "safety",
+          "description": "Prototype pump safety requirements."
+        }
+      ]
+    },
+    {
+      "id": "bis-proto-008",
+      "standard_number": "IS 8888:2023",
+      "title": "Industrial Pump Safety and Installation Requirements",
+      "scope": "Prototype record for pump safety and installation retrieval.",
+      "category": "pump_safety",
+      "product_types": [
+        "industrial pump",
+        "centrifugal pump",
+        "pump installation"
+      ],
+      "technical_requirements": [
+        "Pump installation shall provide appropriate mechanical stability.",
+        "Electrical connections shall be protected against relevant hazards.",
+        "Operating and maintenance instructions shall be provided."
+      ],
+      "keywords": [
+        "pump safety",
+        "pump installation",
+        "industrial pump",
+        "electrical safety",
+        "maintenance"
+      ],
+      "edition": "2023",
+      "status": "prototype_active",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "references": []
+    }
+  ]
+}

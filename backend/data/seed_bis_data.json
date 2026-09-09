@@ -1,0 +1,422 @@
+{
+  "standards": [
+    {
+      "standard_number": "IS 9137:2002",
+      "title": "Centrifugal Pumps — Specification",
+      "scope": "This standard specifies requirements for centrifugal pumps used for clear, cold water for agricultural, industrial and domestic supply purposes. Covers single-stage and multi-stage horizontal and vertical centrifugal pumps.",
+      "category": "Mechanical Engineering - Pumps",
+      "edition": "2002",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "BIS Product Certification (ISI Mark) applicable under CRS",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["centrifugal pump", "water pump", "agricultural pump", "industrial pump"],
+        "relevance_keywords": ["pump", "centrifugal", "water supply", "flow rate", "head", "impeller", "casing", "motor", "efficiency"]
+      }
+    },
+    {
+      "standard_number": "IS 6595 (Part 1):2002",
+      "title": "Horizontal Centrifugal Pumps for Clear, Cold Water — Testing — Part 1: Methods of Test",
+      "scope": "Methods of testing horizontal centrifugal pumps for clear, cold water. Covers performance tests, NPSH tests, and mechanical run tests.",
+      "category": "Mechanical Engineering - Pumps",
+      "edition": "2002",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["centrifugal pump", "horizontal pump"],
+        "relevance_keywords": ["pump testing", "performance test", "NPSH", "mechanical run test", "centrifugal pump test"]
+      }
+    },
+    {
+      "standard_number": "IS 13252 (Part 1):2010",
+      "title": "Information Technology Equipment — Safety — Part 1: General Requirements",
+      "scope": "Specifies safety requirements for information technology equipment including computers, printers, scanners, and peripherals. Covers electrical safety, mechanical safety, temperature requirements, and fire resistance.",
+      "category": "Information Technology",
+      "edition": "2010",
+      "status": "current",
+      "amendments": [{"amendment": "Amd 1", "year": "2013"}],
+      "certification_required": true,
+      "certification_details": "Compulsory BIS Registration under CRS Order for IT equipment",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["computer", "printer", "scanner", "IT equipment", "office equipment", "laptop", "desktop", "monitor"],
+        "relevance_keywords": ["computer", "printer", "scanner", "IT equipment", "electrical safety", "information technology", "office equipment", "peripheral"]
+      }
+    },
+    {
+      "standard_number": "IS 1391 (Part 1):1992",
+      "title": "Room Air Conditioners — Specification — Part 1: Unitary Air Conditioners",
+      "scope": "Specifies requirements for factory-made unitary room air conditioners. Covers cooling capacity, energy efficiency ratio, noise levels, electrical safety, and refrigerant requirements.",
+      "category": "Electrical - HVAC",
+      "edition": "1992",
+      "status": "current",
+      "amendments": [{"amendment": "Amd 1", "year": "2009"}, {"amendment": "Amd 2", "year": "2014"}],
+      "certification_required": true,
+      "certification_details": "BIS Registration mandatory under CRS Order",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["air conditioner", "room air conditioner", "split AC", "window AC", "HVAC"],
+        "relevance_keywords": ["air conditioner", "cooling capacity", "EER", "energy efficiency", "refrigerant", "compressor", "noise level", "thermostat"]
+      }
+    },
+    {
+      "standard_number": "IS 1293:2019",
+      "title": "Solar Flat Plate Collector — Specification",
+      "scope": "Specifies requirements for solar flat plate collectors used in domestic and industrial water heating applications. Covers thermal performance, materials, pressure testing, and durability requirements.",
+      "category": "Renewable Energy",
+      "edition": "2019",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "BIS Product Certification for solar thermal equipment",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["solar collector", "solar water heater", "flat plate collector", "solar thermal"],
+        "relevance_keywords": ["solar", "flat plate collector", "water heater", "thermal efficiency", "absorber", "glazing", "insulation"]
+      }
+    },
+    {
+      "standard_number": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel — Specification",
+      "scope": "Specifies requirements for hot rolled medium and high tensile structural steel for general structural purposes including bridges, buildings, and general engineering. Covers chemical composition, mechanical properties, and testing.",
+      "category": "Materials - Steel",
+      "edition": "2011",
+      "status": "current",
+      "amendments": [{"amendment": "Amd 1", "year": "2014"}],
+      "certification_required": true,
+      "certification_details": "Compulsory BIS certification for structural steel",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["structural steel", "steel plate", "steel section", "hot rolled steel", "construction material"],
+        "relevance_keywords": ["steel", "structural steel", "hot rolled", "tensile strength", "yield strength", "chemical composition", "weldability"]
+      }
+    },
+    {
+      "standard_number": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete — Code of Practice",
+      "scope": "Code of practice for general structural use of plain and reinforced concrete. Covers design, materials, durability, workmanship, mix design, and structural requirements for concrete construction.",
+      "category": "Construction - Concrete",
+      "edition": "2000",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["concrete", "reinforced concrete", "cement", "construction"],
+        "relevance_keywords": ["concrete", "reinforced concrete", "cement", "mix design", "compressive strength", "durability", "workmanship", "curing"]
+      }
+    },
+    {
+      "standard_number": "IS 694:2020",
+      "title": "PVC Insulated Cables for Working Voltages up to and Including 1100V — Specification",
+      "scope": "Specifies requirements for PVC insulated cables and cords with copper or aluminium conductors for working voltages up to 1100V. Covers conductor sizes, insulation thickness, voltage rating, and testing.",
+      "category": "Electrical - Cables",
+      "edition": "2020",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "Compulsory BIS Registration under CRS for PVC cables",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["cable", "PVC cable", "electrical cable", "power cable", "wiring"],
+        "relevance_keywords": ["PVC cable", "insulated cable", "conductor", "voltage rating", "copper conductor", "aluminium conductor", "insulation", "1100V"]
+      }
+    },
+    {
+      "standard_number": "IS 12100:2010",
+      "title": "Safety of Machinery — General Principles for Design",
+      "scope": "Specifies basic terminology, methodology, and general principles for design to achieve safety of machinery. Covers risk assessment, risk reduction, protective measures, and safe design principles.",
+      "category": "Safety - Machinery",
+      "edition": "2010",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["machinery", "industrial equipment", "manufacturing equipment"],
+        "relevance_keywords": ["machine safety", "risk assessment", "safeguarding", "protective measures", "hazard", "safety design", "risk reduction"]
+      }
+    },
+    {
+      "standard_number": "IS 325:1996",
+      "title": "Three Phase Induction Motors — Specification",
+      "scope": "Specifies requirements for three phase cage induction motors rated up to and including 315 kW. Covers ratings, performance, testing, marking, and dimensions.",
+      "category": "Electrical - Motors",
+      "edition": "1996",
+      "status": "current",
+      "amendments": [{"amendment": "Amd 1", "year": "2002"}],
+      "certification_required": true,
+      "certification_details": "BIS Product Certification (ISI Mark) for electric motors",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["electric motor", "induction motor", "three phase motor", "AC motor"],
+        "relevance_keywords": ["motor", "induction motor", "three phase", "efficiency", "power rating", "RPM", "torque", "frame size", "IE class"]
+      }
+    },
+    {
+      "standard_number": "IS 2858:2014",
+      "title": "End-Suction Centrifugal Pumps (Other than those for Agricultural Purposes) — Specification",
+      "scope": "Specifies requirements for end-suction centrifugal pumps used for general industrial and municipal water supply purposes. Covers hydraulic performance, dimensions, materials, testing, and marking.",
+      "category": "Mechanical Engineering - Pumps",
+      "edition": "2014",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "BIS Product Certification (ISI Mark)",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["centrifugal pump", "end suction pump", "industrial pump", "water pump"],
+        "relevance_keywords": ["end suction pump", "centrifugal pump", "industrial pump", "water supply", "municipal pump", "impeller"]
+      }
+    },
+    {
+      "standard_number": "IS 1239 (Part 1):2004",
+      "title": "Mild Steel Tubes, Tubulars, and Other Wrought Steel Fittings — Specification — Part 1: Mild Steel Tubes",
+      "scope": "Specifies requirements for mild steel tubes for water, gas, sewage, and steam services. Covers dimensions, materials, testing, galvanizing, and threading.",
+      "category": "Materials - Pipes",
+      "edition": "2004",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "BIS Certification (ISI Mark) required",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["steel pipe", "steel tube", "GI pipe", "mild steel tube", "water pipe"],
+        "relevance_keywords": ["steel tube", "GI pipe", "galvanized pipe", "mild steel pipe", "water pipe", "gas pipe", "plumbing"]
+      }
+    },
+    {
+      "standard_number": "IS 3025 (Part 17):2022",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater — Part 17: Non-Filterable Residue (Total Suspended Solids)",
+      "scope": "Prescribes methods for determination of total suspended solids in water and wastewater samples.",
+      "category": "Environmental - Water Testing",
+      "edition": "2022",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["water testing", "wastewater testing", "environmental testing"],
+        "relevance_keywords": ["water testing", "TSS", "suspended solids", "wastewater", "water quality", "sampling"]
+      }
+    },
+    {
+      "standard_number": "IS 10500:2012",
+      "title": "Drinking Water — Specification",
+      "scope": "Specifies requirements for drinking water quality. Covers physical, chemical, bacteriological, and radiological requirements including permissible and desirable limits.",
+      "category": "Environmental - Water Quality",
+      "edition": "2012",
+      "status": "current",
+      "amendments": [{"amendment": "Amd 1", "year": "2015"}],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["drinking water", "water supply", "water quality"],
+        "relevance_keywords": ["drinking water", "water quality", "potable water", "TDS", "pH", "turbidity", "bacteriological", "arsenic", "fluoride"]
+      }
+    },
+    {
+      "standard_number": "IS 1172:1993",
+      "title": "Code of Basic Requirements for Water Supply, Drainage and Sanitation",
+      "scope": "Provides basic requirements for water supply, drainage, and sanitation installations in buildings. Covers water demand, plumbing fixtures, pipe sizing, drainage, and sanitary installations.",
+      "category": "Construction - Plumbing",
+      "edition": "1993",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["plumbing", "water supply", "drainage", "sanitation", "building services"],
+        "relevance_keywords": ["water supply", "drainage", "sanitation", "plumbing", "pipe sizing", "fixture", "building services"]
+      }
+    },
+    {
+      "standard_number": "IS 875 (Part 3):2015",
+      "title": "Design Loads (Other than Earthquake) for Buildings and Structures — Code of Practice — Part 3: Wind Loads",
+      "scope": "Specifies wind loads and wind effects on buildings and structures. Covers basic wind speed, terrain categories, wind pressure coefficients, and dynamic wind effects.",
+      "category": "Construction - Structural",
+      "edition": "2015",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["building", "structure", "construction", "civil engineering"],
+        "relevance_keywords": ["wind load", "design load", "wind speed", "pressure coefficient", "terrain", "building design", "structural design"]
+      }
+    },
+    {
+      "standard_number": "IS 1893 (Part 1):2016",
+      "title": "Criteria for Earthquake Resistant Design of Structures — Part 1: General Provisions and Buildings",
+      "scope": "Specifies criteria for earthquake resistant design of structures. Covers seismic zone map, response spectra, base shear, structural requirements, and ductile detailing provisions.",
+      "category": "Construction - Structural",
+      "edition": "2016",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["building", "structure", "earthquake resistant", "civil engineering"],
+        "relevance_keywords": ["earthquake", "seismic", "seismic zone", "base shear", "response spectrum", "ductile detailing", "structural design"]
+      }
+    },
+    {
+      "standard_number": "IS 5765:1970",
+      "title": "Technical Requirements for Installation of Centrifugal Pumps",
+      "scope": "Specifies technical requirements for installation of centrifugal pumps including foundation, alignment, piping, suction conditions, and commissioning procedures.",
+      "category": "Mechanical Engineering - Pumps",
+      "edition": "1970",
+      "status": "current",
+      "amendments": [],
+      "certification_required": false,
+      "certification_details": null,
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["centrifugal pump", "pump installation"],
+        "relevance_keywords": ["pump installation", "foundation", "alignment", "piping", "suction", "commissioning", "centrifugal pump"]
+      }
+    },
+    {
+      "standard_number": "IS 15885:2010",
+      "title": "Energy Efficient Induction Motors — Specification",
+      "scope": "Specifies requirements for energy efficient three-phase cage induction motors. Covers IE2 and IE3 efficiency classes, performance, testing, and marking requirements.",
+      "category": "Electrical - Motors",
+      "edition": "2010",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "BIS Certification for energy efficient motors",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["electric motor", "energy efficient motor", "induction motor", "IE2 motor", "IE3 motor"],
+        "relevance_keywords": ["energy efficient motor", "IE2", "IE3", "induction motor", "efficiency class", "motor efficiency"]
+      }
+    },
+    {
+      "standard_number": "IS 398 (Part 1):1996",
+      "title": "Aluminium Conductors for Overhead Transmission Lines — Part 1: Aluminium Stranded Conductors",
+      "scope": "Specifies requirements for aluminium stranded conductors (AAC) for use in overhead power transmission and distribution lines.",
+      "category": "Electrical - Transmission",
+      "edition": "1996",
+      "status": "current",
+      "amendments": [],
+      "certification_required": true,
+      "certification_details": "BIS Certification for overhead conductors",
+      "source": "BIS Catalog",
+      "metadata": {
+        "product_categories": ["aluminium conductor", "overhead conductor", "transmission line", "AAC"],
+        "relevance_keywords": ["aluminium conductor", "AAC", "overhead line", "transmission", "stranded conductor", "power line"]
+      }
+    }
+  ],
+  "references": [
+    {
+      "from_standard": "IS 9137:2002",
+      "to_standard": "IS 6595 (Part 1):2002",
+      "reference_type": "test_method",
+      "description": "Testing methods for centrifugal pumps"
+    },
+    {
+      "from_standard": "IS 9137:2002",
+      "to_standard": "IS 2062:2011",
+      "reference_type": "normative_reference",
+      "description": "Steel specification for pump components"
+    },
+    {
+      "from_standard": "IS 9137:2002",
+      "to_standard": "IS 12100:2010",
+      "reference_type": "safety",
+      "description": "General machinery safety principles"
+    },
+    {
+      "from_standard": "IS 9137:2002",
+      "to_standard": "IS 5765:1970",
+      "reference_type": "installation",
+      "description": "Installation requirements for centrifugal pumps"
+    },
+    {
+      "from_standard": "IS 9137:2002",
+      "to_standard": "IS 2858:2014",
+      "reference_type": "related_product",
+      "description": "End-suction centrifugal pump specification"
+    },
+    {
+      "from_standard": "IS 9137:2002",
+      "to_standard": "IS 325:1996",
+      "reference_type": "allied",
+      "description": "Motor specification for pump drives"
+    },
+    {
+      "from_standard": "IS 2858:2014",
+      "to_standard": "IS 6595 (Part 1):2002",
+      "reference_type": "test_method",
+      "description": "Testing methods for centrifugal pumps"
+    },
+    {
+      "from_standard": "IS 13252 (Part 1):2010",
+      "to_standard": "IS 12100:2010",
+      "reference_type": "safety",
+      "description": "General safety principles for machinery and equipment"
+    },
+    {
+      "from_standard": "IS 325:1996",
+      "to_standard": "IS 15885:2010",
+      "reference_type": "related_product",
+      "description": "Energy efficient motor specification"
+    },
+    {
+      "from_standard": "IS 325:1996",
+      "to_standard": "IS 12100:2010",
+      "reference_type": "safety",
+      "description": "Machinery safety principles for motor design"
+    },
+    {
+      "from_standard": "IS 456:2000",
+      "to_standard": "IS 2062:2011",
+      "reference_type": "normative_reference",
+      "description": "Structural steel for reinforced concrete construction"
+    },
+    {
+      "from_standard": "IS 456:2000",
+      "to_standard": "IS 1893 (Part 1):2016",
+      "reference_type": "allied",
+      "description": "Earthquake resistant design criteria for concrete structures"
+    },
+    {
+      "from_standard": "IS 456:2000",
+      "to_standard": "IS 875 (Part 3):2015",
+      "reference_type": "allied",
+      "description": "Wind load design for concrete structures"
+    },
+    {
+      "from_standard": "IS 10500:2012",
+      "to_standard": "IS 3025 (Part 17):2022",
+      "reference_type": "test_method",
+      "description": "Test methods for water quality parameters"
+    },
+    {
+      "from_standard": "IS 1172:1993",
+      "to_standard": "IS 1239 (Part 1):2004",
+      "reference_type": "normative_reference",
+      "description": "Steel pipe specification for plumbing installations"
+    },
+    {
+      "from_standard": "IS 1172:1993",
+      "to_standard": "IS 10500:2012",
+      "reference_type": "allied",
+      "description": "Drinking water quality requirements for water supply systems"
+    }
+  ]
+}
