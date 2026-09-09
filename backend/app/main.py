@@ -26,6 +26,22 @@ async def lifespan(app: FastAPI):
     await init_db()
     logger.info("[DB] Database initialized")
 
+    # Auto-seed standards if database is empty (e.g. fresh Render deployment)
+    try:
+        from sqlalchemy import select, func
+        from app.core.database import async_session
+        from app.models.bis_standard import BISStandard
+        from scripts.ingest_bis_data import ingest_bis_data
+
+        async with async_session() as session:
+            count = await session.scalar(select(func.count(BISStandard.id)))
+            if not count or count == 0:
+                logger.info("[DB] Database has 0 standards. Auto-seeding BIS standards...")
+                await ingest_bis_data()
+                logger.info("[DB] Auto-seeding BIS standards complete.")
+    except Exception as e:
+        logger.error(f"[DB] Auto-seed failed: {e}")
+
     # Ensure upload directory exists
     settings.upload_path.mkdir(parents=True, exist_ok=True)
     logger.info(f"[FS] Upload directory: {settings.upload_path}")

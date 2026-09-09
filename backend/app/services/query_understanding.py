@@ -114,8 +114,28 @@ class QueryUnderstandingService:
 
         query_lower = query_text.lower()
 
-        # Try to detect product
-        product = query_text.split("for")[-1].strip() if "for" in query_lower else query_text
+        # Try to detect product robustly:
+        # Match common phrases: "need [a] <product> for/with", "looking for <product>", "procure <product>"
+        product = None
+        match = re.search(
+            r"(?:need|looking for|require|procuring|procure|supply of|purchase of)\s+(?:an?|the)?\s*([a-zA-Z0-9\s\-]+?)(?:\s+\b(?:for|with|having|to|suitable)\b|[.,;:\n]|$)",
+            query_text,
+            re.IGNORECASE,
+        )
+        if match:
+            product = match.group(1).strip()
+        else:
+            # Fallback: take text before first punctuation or standalone \bfor\b
+            first_clause = re.split(r"[.:;\n]|\bfor\b", query_text, flags=re.IGNORECASE)[0]
+            product = re.sub(
+                r"^(?:i\s+need\s+(?:an?|the)?|we\s+need\s+(?:an?|the)?|please\s+recommend\s+standards\s+for\s+)\s*",
+                "",
+                first_clause,
+                flags=re.IGNORECASE,
+            ).strip()
+
+        if not product:
+            product = query_text[:100]
 
         # Try to detect parameters
         parameters = {}

@@ -37,11 +37,11 @@ env.bak/
 venv.bak/
 
 # ── Databases & Local Storage ─────────────────────────────────────
-*.db
+*.db-journal
 *.sqlite
 *.sqlite3
-data/*.db
-backend/data/*.db
+*.db
+!backend/data/procura.db
 
 # ── Uploaded Files & Temporary Storage ────────────────────────────
 uploads/*
