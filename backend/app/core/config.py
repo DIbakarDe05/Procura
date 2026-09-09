@@ -78,7 +78,7 @@ class Settings(BaseSettings):
 
     # ── Rate Limiting ────────────────────────────────────────────
     RATE_LIMIT_ENABLED: bool = True
-    RATE_LIMIT_RPM: int = 10  # Maximum requests per minute per client IP
+    RATE_LIMIT_RPM: int = 160  # Maximum requests per minute per client IP
 
     # ── CORS ─────────────────────────────────────────────────────
     CORS_ORIGINS: list[str] = [

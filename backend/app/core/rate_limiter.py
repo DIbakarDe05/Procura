@@ -31,7 +31,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
     def __init__(
         self,
         app,
-        rpm: int = 10,
+        rpm: int = 160,
         exempt_paths: Optional[Set[str]] = None,
         exempt_prefixes: Optional[tuple[str, ...]] = None,
     ):
