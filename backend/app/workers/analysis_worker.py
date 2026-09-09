@@ -7,6 +7,7 @@ Both paths converge into the same recommendation pipeline.
 
 import json
 import logging
+import asyncio
 from datetime import datetime, timezone
 from typing import Optional
 
@@ -99,21 +100,19 @@ async def run_recommendation_pipeline(
             product_category=req.get("product_category"),
         )
 
-        # ── Step 3: Gemini Analysis (Top-K only) ───────────────
-        top_candidates = relevance_results[:4]  # Analyze top 4 to respect rate limits
+        # ── Step 3: Gemini Analysis (Parallel Top-K) ───────────
+        k_limit = 2 if len(requirements) > 3 else 3
+        top_candidates = relevance_results[:k_limit]
 
-        for rank, rel_result in enumerate(top_candidates):
-            # Find the matching candidate
+        async def _eval_one(rank: int, rel_result):
             candidate = next(
                 (c for c in candidates if c.standard_id == rel_result.standard_id),
-                None
+                None,
             )
             if not candidate:
-                continue
+                return None
 
             std = candidate.standard
-
-            # Gemini structured analysis
             analysis = await gemini_service.analyze_standard(
                 requirement_text=req["text"],
                 requirement_type=req.get("type", "general"),
@@ -126,6 +125,15 @@ async def run_recommendation_pipeline(
                 standard_status=std.status,
                 standard_id=std.id,
             )
+            return (rank, rel_result, candidate, std, analysis)
+
+        eval_tasks = [_eval_one(r, rel_res) for r, rel_res in enumerate(top_candidates)]
+        eval_results = await asyncio.gather(*eval_tasks)
+
+        for item in eval_results:
+            if not item:
+                continue
+            rank, rel_result, candidate, std, analysis = item
 
             # ── Step 4: Compliance Scoring ─────────────────────
             if job_id:

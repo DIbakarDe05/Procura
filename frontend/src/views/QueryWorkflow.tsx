@@ -42,7 +42,7 @@ export const QueryWorkflow: React.FC<QueryWorkflowProps> = ({ onBack }) => {
       setStatusMessage(t.btnAnalyzing)
 
       let attempts = 0
-      const maxAttempts = 60
+      const maxAttempts = 150  // 5 minutes (150 * 2000ms)
 
       pollRef.current = setInterval(async () => {
         attempts++
